@@ -36,10 +36,10 @@ export default function PageHero({ eyebrow, title, subtitle, bg, crumb }: PageHe
           transition={{ delay: 0.1, duration: 0.6 }}
         >
           {eyebrow && <span className="eyebrow mt-4 block text-gold-300">{eyebrow}</span>}
-          <h1 className="mt-2 max-w-2xl font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+          <h1 className="mt-2 max-w-2xl font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
             {title}
           </h1>
-          {subtitle && <p className="mt-4 max-w-xl text-lg text-brand-50/85">{subtitle}</p>}
+          {subtitle && <p className="mt-4 max-w-xl text-base text-brand-50/85 sm:text-lg">{subtitle}</p>}
         </motion.div>
       </div>
     </section>

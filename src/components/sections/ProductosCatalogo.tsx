@@ -60,7 +60,7 @@ export default function ProductosCatalogo() {
           initial={inView.initial}
           whileInView={inView.whileInView}
           viewport={inView.viewport}
-          className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-10 grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-7"
         >
           <AnimatePresence mode="popLayout">
             {items.map((p) => (
@@ -135,11 +135,11 @@ export default function ProductosCatalogo() {
                 <X className="h-5 w-5" />
               </button>
 
-              <div className="flex items-center justify-center rounded-2xl bg-brand-50 p-6">
-                <img src={selected.image} alt={selected.name} className="max-h-72 w-full object-contain" />
+              <div className="flex items-center justify-center rounded-2xl bg-brand-50 p-5 sm:p-6">
+                <img src={selected.image} alt={selected.name} className="max-h-56 w-full object-contain sm:max-h-72" />
               </div>
 
-              <div>
+              <div className="pr-8 sm:pr-0">
                 <span className="eyebrow">{selected.tagline}</span>
                 <h3 className="mt-2 font-display text-2xl font-bold text-brand-900">{selected.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink/70">{selected.longDesc}</p>

@@ -16,7 +16,7 @@ export default function WhatsAppFloat() {
             initial={{ opacity: 0, y: 12, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.9 }}
-            className="relative w-64 rounded-2xl bg-white p-4 shadow-soft ring-1 ring-brand-100"
+            className="relative w-56 rounded-2xl bg-white p-4 shadow-soft ring-1 ring-brand-100 sm:w-64"
           >
             <button
               onClick={() => setOpen(false)}

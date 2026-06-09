@@ -24,7 +24,7 @@ export default function Hero() {
         className="absolute inset-0 -z-10 bg-gradient-to-br from-brand-900 via-brand-800/90 to-brand-700/70"
       />
 
-      <div className="container-pro grid items-center gap-12 pt-28 pb-16 lg:grid-cols-12">
+      <div className="container-pro grid items-center gap-8 pt-28 pb-16 sm:gap-12 lg:grid-cols-12">
         <div className="lg:col-span-7">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="mt-6 font-display text-4xl font-extrabold leading-[1.1] text-white sm:text-5xl lg:text-6xl"
+            className="mt-6 font-display text-3xl font-extrabold leading-[1.12] text-white sm:text-5xl lg:text-6xl"
           >
             Tu salud, la pasión que me{' '}
             <span className="bg-gold-gradient bg-clip-text text-transparent">mueve cada día</span>
@@ -50,7 +50,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.7 }}
-            className="mt-6 max-w-xl text-lg leading-relaxed text-brand-50/90"
+            className="mt-5 max-w-xl text-base leading-relaxed text-brand-50/90 sm:mt-6 sm:text-lg"
           >
             Si tienes una lesión, has pasado por una cirugía o quieres vivir sin dolor, te ayudo a
             lograrlo con un enfoque clínico personalizado y técnicas basadas en evidencia.
@@ -100,7 +100,7 @@ export default function Hero() {
               <img
                 src={reciclada('alex2.png')}
                 alt="Alex Silva, fisioterapeuta"
-                className="h-[460px] w-[360px] rounded-[1.6rem] object-cover object-top"
+                className="h-[460px] w-full max-w-[360px] rounded-[1.6rem] object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-4 -left-6 rounded-2xl bg-white px-5 py-3 shadow-card">

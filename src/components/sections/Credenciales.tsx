@@ -31,7 +31,7 @@ export default function Credenciales() {
               <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-brand-50 text-brand-600">
                 <Icon className="h-6 w-6" />
               </div>
-              <p className="font-display text-3xl font-extrabold text-brand-700 sm:text-4xl">
+              <p className="font-display text-2xl font-extrabold text-brand-700 sm:text-3xl lg:text-4xl">
                 <AnimatedCounter to={to} suffix={suffix} />
               </p>
               <p className="mt-1 text-xs font-medium text-ink/60 sm:text-sm">{label}</p>

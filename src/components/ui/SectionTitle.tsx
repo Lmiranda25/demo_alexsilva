@@ -27,7 +27,7 @@ export default function SectionTitle({
     >
       {eyebrow && <span className="eyebrow">{eyebrow}</span>}
       <h2
-        className={`mt-3 font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-[2.6rem] ${
+        className={`mt-3 font-display text-2xl font-bold leading-tight sm:text-3xl lg:text-[2.6rem] ${
           light ? 'text-white' : 'text-brand-900'
         }`}
       >

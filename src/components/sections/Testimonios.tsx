@@ -35,7 +35,7 @@ export default function Testimonios() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: dir > 0 ? -60 : 60 }}
               transition={{ duration: 0.4 }}
-              className="relative rounded-3xl bg-white p-8 text-center shadow-card sm:p-10"
+              className="relative rounded-3xl bg-white p-6 text-center shadow-card sm:p-8 lg:p-10"
             >
               <div className="mb-4 flex justify-center">
                 {[...Array(t.rating)].map((_, i) => (
