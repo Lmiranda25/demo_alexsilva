@@ -10,6 +10,12 @@ import Programas from './pages/Programas'
 import Productos from './pages/Productos'
 import ProductoDetalle from './pages/ProductoDetalle'
 import Contacto from './pages/Contacto'
+import Aula from './pages/Aula'
+import AulaCategoria from './pages/AulaCategoria'
+import AulaVideo from './pages/AulaVideo'
+import AulaCheckout from './pages/AulaCheckout'
+import AulaLogin from './pages/AulaLogin'
+import AulaMiCuenta from './pages/AulaMiCuenta'
 
 export default function App() {
   const location = useLocation()
@@ -26,6 +32,13 @@ export default function App() {
             <Route path="/productos" element={<Productos />} />
             <Route path="/productos/:slug" element={<ProductoDetalle />} />
             <Route path="/contacto" element={<Contacto />} />
+            {/* Aula virtual */}
+            <Route path="/aula" element={<Aula />} />
+            <Route path="/aula/login" element={<AulaLogin />} />
+            <Route path="/aula/mi-cuenta" element={<AulaMiCuenta />} />
+            <Route path="/aula/categoria/:slug" element={<AulaCategoria />} />
+            <Route path="/aula/video/:id" element={<AulaVideo />} />
+            <Route path="/aula/checkout/:slug" element={<AulaCheckout />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </AnimatePresence>

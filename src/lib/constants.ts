@@ -33,5 +33,6 @@ export const NAV_LINKS = [
   { label: 'Sobre Alex', to: '/sobre' },
   { label: 'Programas', to: '/programas' },
   { label: 'Productos', to: '/productos' },
+  { label: 'Aula Virtual', to: '/aula' },
   { label: 'Contacto', to: '/contacto' },
 ] as const
