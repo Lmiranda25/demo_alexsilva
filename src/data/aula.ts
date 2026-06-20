@@ -33,8 +33,17 @@ export interface Category {
   videos: Video[]
 }
 
-// URL de video de ejemplo (placeholder). El backend la reemplaza por las reales.
-const SAMPLE = 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+// Videos REALES públicos del canal de Alex Silva (@alexsilvacomovivirsindolor),
+// usados como vistas previas gratuitas de cada categoría.
+const REAL = {
+  consulta: 'https://www.youtube.com/embed/ix6dxEY0pyg', // Por qué hacer consulta en fisioterapia
+  queEs: 'https://www.youtube.com/embed/V7RlxGKM74w', // Fisioterapia: qué es, cómo ayuda
+  lumbar: 'https://www.youtube.com/embed/aXjrmwfDrOE', // Tratamiento del dolor lumbar
+}
+
+// PLACEHOLDER para los videos de PAGO. Estos son privados de la plataforma del
+// cliente; el backend (VPS) debe reemplazar esta URL por las URLs reales protegidas.
+const SAMPLE = 'https://www.youtube.com/embed/aXjrmwfDrOE'
 
 export const CATEGORIES: Category[] = [
   {
@@ -48,7 +57,7 @@ export const CATEGORIES: Category[] = [
     currency: 'S/',
     level: 'Avanzado',
     videos: [
-      { id: 'cl-1', title: 'Introducción y anatomía lumbar', duration: '14:20', videoUrl: SAMPLE, free: true },
+      { id: 'cl-1', title: 'Introducción: tratamiento del dolor lumbar', duration: '14:20', videoUrl: REAL.lumbar, free: true },
       { id: 'cl-2', title: 'Biomecánica de la columna lumbar', duration: '18:45', videoUrl: SAMPLE },
       { id: 'cl-3', title: 'Evaluación del paciente lumbar', duration: '22:10', videoUrl: SAMPLE },
       { id: 'cl-4', title: 'Banderas rojas y diagnóstico diferencial', duration: '16:30', videoUrl: SAMPLE },
@@ -73,7 +82,7 @@ export const CATEGORIES: Category[] = [
     currency: 'S/',
     level: 'Intermedio',
     videos: [
-      { id: 'tmt-1', title: 'Fundamentos de la terapia manual', duration: '13:15', videoUrl: SAMPLE, free: true },
+      { id: 'tmt-1', title: 'Fisioterapia: qué es y cómo ayuda', duration: '13:15', videoUrl: REAL.queEs, free: true },
       { id: 'tmt-2', title: 'Técnicas de tejidos blandos', duration: '19:20', videoUrl: SAMPLE },
       { id: 'tmt-3', title: 'Manipulación articular segura', duration: '23:40', videoUrl: SAMPLE },
       { id: 'tmt-4', title: 'Integración en el plan de tratamiento', duration: '16:55', videoUrl: SAMPLE },
@@ -90,7 +99,7 @@ export const CATEGORIES: Category[] = [
     currency: 'S/',
     level: 'Intermedio',
     videos: [
-      { id: 'tme-1', title: 'Anamnesis y entrevista clínica', duration: '15:30', videoUrl: SAMPLE, free: true },
+      { id: 'tme-1', title: 'Por qué hacer una consulta en fisioterapia', duration: '15:30', videoUrl: REAL.consulta, free: true },
       { id: 'tme-2', title: 'Inspección y observación', duration: '14:10', videoUrl: SAMPLE },
       { id: 'tme-3', title: 'Pruebas de movilidad', duration: '18:25', videoUrl: SAMPLE },
       { id: 'tme-4', title: 'Pruebas neurológicas', duration: '20:15', videoUrl: SAMPLE },
@@ -109,7 +118,7 @@ export const CATEGORIES: Category[] = [
     currency: 'S/',
     level: 'Avanzado',
     videos: [
-      { id: 'pc-1', title: 'Próximamente — avance gratuito', duration: '03:00', videoUrl: SAMPLE, free: true },
+      { id: 'pc-1', title: 'Próximamente — avance gratuito', duration: '03:00', videoUrl: REAL.lumbar, free: true },
     ],
   },
 ]
